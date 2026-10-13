@@ -1,0 +1,13 @@
+{
+    "model": "Random Forest",
+    "total_samples": 1191,
+    "train_samples": 952,
+    "test_samples": 239,
+    "mae": 15.61395356686548,
+    "rmse": 20.926259267510837,
+    "mape": 1.1245423948570081,
+    "directional_accuracy": 49.37238493723849,
+    "market_return_percent": -8.398896031985947,
+    "strategy_return_percent": -8.98860119366608,
+    "max_drawdown_percent": -16.476314812829685
+}

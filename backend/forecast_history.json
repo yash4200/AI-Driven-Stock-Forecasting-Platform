@@ -1,0 +1,98 @@
+[
+    {
+        "symbol": "RELIANCE.NS",
+        "model": "Random Forest",
+        "current_price": 1226.4,
+        "predicted_price": 1230.56,
+        "change": 4.16,
+        "change_percent": 0.34,
+        "direction": "UP",
+        "forecast_horizon": "Next Trading Day",
+        "prediction_date": "2026-09-18",
+        "target_date": "2026-09-19"
+    },
+    {
+        "symbol": "RELIANCE.NS",
+        "model": "Random Forest",
+        "current_price": 1248.0,
+        "predicted_price": 1253.91,
+        "change": 5.91,
+        "change_percent": 0.47,
+        "direction": "UP",
+        "forecast_horizon": "Next Trading Day",
+        "prediction_date": "2026-09-23",
+        "target_date": "2026-09-24"
+    },
+    {
+        "symbol": "HDFCBANK.NS",
+        "model": "Random Forest",
+        "current_price": 737.25,
+        "predicted_price": 1055.8,
+        "change": 318.55,
+        "change_percent": 43.21,
+        "direction": "UP",
+        "forecast_horizon": "Next Trading Day",
+        "prediction_date": "2026-09-23",
+        "target_date": "2026-09-24"
+    },
+    {
+        "symbol": "RELIANCE.NS",
+        "model": "Random Forest",
+        "current_price": 1219.2,
+        "predicted_price": 1220.99,
+        "change": 1.79,
+        "change_percent": 0.15,
+        "direction": "UP",
+        "forecast_horizon": "Next Trading Day",
+        "prediction_date": "2026-09-24",
+        "target_date": "2026-09-25"
+    },
+    {
+        "symbol": "RELIANCE.NS",
+        "model": "Random Forest",
+        "current_price": 1226.0,
+        "predicted_price": 1225.5,
+        "change": -0.5,
+        "change_percent": -0.04,
+        "direction": "DOWN",
+        "forecast_horizon": "Next Trading Day",
+        "prediction_date": "2026-09-25",
+        "target_date": "2026-09-26"
+    },
+    {
+        "symbol": "TITAN.NS",
+        "model": "Random Forest",
+        "current_price": 4884.0,
+        "predicted_price": 1571.47,
+        "change": -3312.53,
+        "change_percent": -67.82,
+        "direction": "DOWN",
+        "forecast_horizon": "Next Trading Day",
+        "prediction_date": "2026-09-25",
+        "target_date": "2026-09-26"
+    },
+    {
+        "symbol": "INFY.NS",
+        "model": "Random Forest",
+        "current_price": 1000.2,
+        "predicted_price": 1056.43,
+        "change": 56.23,
+        "change_percent": 5.62,
+        "direction": "UP",
+        "forecast_horizon": "Next Trading Day",
+        "prediction_date": "2026-09-25",
+        "target_date": "2026-09-26"
+    },
+    {
+        "symbol": "TCS.NS",
+        "model": "Random Forest",
+        "current_price": 2082.0,
+        "predicted_price": 1578.51,
+        "change": -503.49,
+        "change_percent": -24.18,
+        "direction": "DOWN",
+        "forecast_horizon": "Next Trading Day",
+        "prediction_date": "2026-09-25",
+        "target_date": "2026-09-26"
+    }
+]

@@ -1,0 +1,16 @@
+﻿.venv/
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+.vite/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

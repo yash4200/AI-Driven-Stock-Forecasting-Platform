@@ -1,0 +1,266 @@
+/* =========================================================
+   STOCKAI LOGIN PAGE
+   ========================================================= */
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(37, 99, 235, 0.16),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(14, 165, 233, 0.1),
+      transparent 35%
+    ),
+    #080b12;
+
+  color: #ffffff;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 430px;
+}
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.login-brand {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-brand h1 {
+  margin: 0;
+
+  font-size: 38px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+
+  color: #ffffff;
+}
+
+.login-brand h1 span {
+  color: #3b82f6;
+}
+
+.login-brand p {
+  margin: 10px 0 0;
+
+  color: #8b95a7;
+  font-size: 14px;
+}
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.login-card {
+  width: 100%;
+
+  padding: 32px;
+
+  background: rgba(17, 24, 39, 0.94);
+
+  border: 1px solid #263044;
+  border-radius: 18px;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  backdrop-filter: blur(12px);
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.login-heading h2 {
+  margin: 0;
+
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.login-heading p {
+  margin: 8px 0 0;
+
+  color: #8993a5;
+  font-size: 14px;
+}
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.login-form {
+  margin-top: 26px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-field label {
+  margin-bottom: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #cbd5e1;
+}
+
+.login-field input {
+  width: 100%;
+  height: 46px;
+
+  padding: 0 14px;
+
+  border: 1px solid #303b50;
+  border-radius: 9px;
+
+  background: #0d1420;
+  color: #ffffff;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.login-field input::placeholder {
+  color: #687386;
+}
+
+.login-field input:hover {
+  border-color: #40506a;
+}
+
+.login-field input:focus {
+  border-color: #3b82f6;
+
+  background: #0c1422;
+
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+/* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+.login-button {
+  width: 100%;
+  height: 46px;
+
+  margin-top: 3px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.login-button:hover {
+  background: #1d4ed8;
+
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.25);
+}
+
+.login-button:active {
+  transform: translateY(1px);
+}
+
+/* =========================================================
+   SIGNUP
+   ========================================================= */
+
+.login-signup {
+  margin: 22px 0 0;
+
+  text-align: center;
+
+  color: #7f8a9d;
+  font-size: 13px;
+}
+
+.login-signup button {
+  margin-left: 4px;
+
+  border: none;
+  padding: 0;
+
+  background: transparent;
+
+  color: #3b82f6;
+
+  font-size: inherit;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.login-signup button:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .login-page {
+    padding: 24px 16px;
+  }
+
+  .login-brand {
+    margin-bottom: 22px;
+  }
+
+  .login-brand h1 {
+    font-size: 32px;
+  }
+
+  .login-card {
+    padding: 24px 20px;
+    border-radius: 15px;
+  }
+
+  .login-heading h2 {
+    font-size: 22px;
+  }
+}

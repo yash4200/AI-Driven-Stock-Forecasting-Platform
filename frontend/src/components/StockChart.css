@@ -1,0 +1,334 @@
+/* =========================================================
+   STOCK CHART
+   FYERS-INSPIRED LIGHT TRADING TERMINAL
+   ========================================================= */
+
+.stock-chart-wrapper {
+  width: 100%;
+  background: #ffffff;
+}
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+.stock-chart-toolbar {
+  width: 100%;
+  min-height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 4px 10px;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.chart-periods {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.chart-period {
+  height: 30px;
+  min-width: 42px;
+
+  padding: 0 11px;
+
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #64748b;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.chart-period:hover {
+  background: #f8fafc;
+  color: #334155;
+}
+
+.chart-period.active {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+
+  box-shadow:
+    0 1px 2px rgba(37, 99, 235, 0.18);
+}
+
+.chart-symbol {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #0f172a;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.chart-symbol-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #16a34a;
+
+  box-shadow:
+    0 0 0 3px rgba(22, 163, 74, 0.10);
+}
+
+.chart-symbol-market {
+  margin-left: 2px;
+
+  padding: 3px 6px;
+
+  border-radius: 4px;
+
+  background: #f1f5f9;
+
+  color: #64748b;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+}
+
+/* =========================================================
+   CHART CONTAINER
+   ========================================================= */
+
+.stock-chart-container {
+  position: relative;
+
+  width: 100%;
+  height: 430px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+.stock-chart-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.chart-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.chart-loader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #64748b;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.chart-spinner {
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid #dbeafe;
+  border-top-color: #2563eb;
+
+  border-radius: 50%;
+
+  animation: chart-spin 0.75s linear infinite;
+}
+
+@keyframes chart-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.chart-error {
+  max-width: 360px;
+
+  padding: 28px;
+
+  text-align: center;
+}
+
+.chart-error-icon {
+  width: 36px;
+  height: 36px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fef2f2;
+  color: #dc2626;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.chart-error-title {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.chart-error-message {
+  margin: 7px 0 0;
+
+  color: #dc2626;
+
+  font-size: 12px;
+}
+
+.chart-error-help {
+  margin: 8px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.stock-chart-footer {
+  min-height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px 4px 0;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+.chart-footer-left,
+.chart-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chart-footer-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+}
+
+.chart-footer-separator {
+  color: #cbd5e1;
+}
+
+.chart-footer-right span {
+  color: #cbd5e1;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .stock-chart-toolbar {
+    padding-bottom: 8px;
+  }
+
+  .chart-period {
+    min-width: 36px;
+    padding: 0 8px;
+
+    font-size: 11px;
+  }
+
+  .chart-symbol {
+    font-size: 12px;
+  }
+
+  .stock-chart-container {
+    height: 380px;
+  }
+
+  .stock-chart-footer {
+    font-size: 9px;
+  }
+
+  .chart-footer-right {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .stock-chart-toolbar {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .chart-periods {
+    flex-wrap: wrap;
+  }
+
+  .chart-period {
+    min-width: 34px;
+    height: 28px;
+
+    padding: 0 7px;
+  }
+
+  .chart-symbol-market {
+    display: none;
+  }
+
+  .stock-chart-container {
+    height: 330px;
+  }
+}

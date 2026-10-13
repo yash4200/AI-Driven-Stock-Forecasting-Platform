@@ -1,0 +1,7 @@
+{
+    "model": "LSTM",
+    "lookback": 60,
+    "mae": 28.408206534785265,
+    "rmse": 36.85686520366894,
+    "directional_accuracy": 51.39664804469274
+}

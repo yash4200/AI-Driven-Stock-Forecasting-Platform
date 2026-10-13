@@ -1,0 +1,14 @@
+{
+    "model": "LSTM",
+    "total_samples": 1191,
+    "train_samples": 952,
+    "test_samples": 179,
+    "lookback": 60,
+    "mae": 37.04496142850909,
+    "rmse": 45.151362583764204,
+    "mape": 2.727749479339606,
+    "directional_accuracy": 50.83798882681564,
+    "market_return_percent": -19.349663969981712,
+    "strategy_return_percent": -7.710854716301729,
+    "max_drawdown_percent": -14.117930828657299
+}
